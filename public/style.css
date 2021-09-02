@@ -1,0 +1,76 @@
+header {
+    background-color: blueviolet;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  h1 {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  nav {
+    background-color: lightgray;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  
+  a {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .cool_navs{
+    color: gray;
+  }
+  q {
+    font-style:italic;
+  }
+  
+  h3 {
+    background-color: rgb(6, 61, 179);
+    color: white;
+    border: 3px solid black;
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 18px;
+  }
+  
+  #eventst {
+    border: 1px solid black;
+    font-style: normal;
+    background-color: lightgray;
+    padding: 6px;
+    margin: 4px;
+    border-radius: 8px;
+    list-style-type: none;
+  }
+  
+  #upcoming {
+    color: black;
+  }
+  
+  footer {
+    color: white;
+    background-color: blueviolet;
+    text-align: center;
+  }
+  
+  
+  
+  thead {
+    background-color: aquamarine;
+    color: white;
+  }
+  
+  tfoot {
+    background-color: black;
+    color: white;
+  }
+  
+  #first
+    { 
+      color: blueviolet;
+  
+    }

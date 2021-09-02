@@ -44,7 +44,7 @@
             <ul class= "nav navbar-nav">
             <li><a href="index.html">Home</a> </li>
             <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="stocks.html"> Stock Market </a></li> 
+            <li><a href="tables.html"> Tables </a></li> 
            
             <!-- <li class="dropdown">
               <a href="examples.html" class = "dropdown-toggle" data-toggle="dropdown">Examples <span class="caret"></span></a> -->
@@ -68,40 +68,104 @@
 
 
       <main class = "row">
-        <div class = "col-lg-8 col-md-6 col-sm-12 col-xs-12">
-          <p> Welcome to my first website! On this website, I will be talking about myself and my interests. <strong> </strong> This website will consist of three different pages, with one being this introduction page, a page about me, and then a page about the Stock Market, one of my main interests. </p>
+        <h1 id ="first"> Tables </h1>
+    <table class = "table table-striped table-condensed">
+      <thead>
+        <tr> 
+          <th> Author First Name </th>
+          <th> Author Last Name </th> 
+          <th> Title </th>
+          <th> Genre </th>
+          <th> Year Published </th> 
+          <th> Publisher </th> 
+          <th> Page Count </th> 
+          <th> MSRP </th>
+    </tr>
+      </thead>
+    <tbody>
+        
+      <tr>
+      <td> J.K. </td>
+      <td> Rowling </td>
+      <td> Harry Potter and the Sorcerer's Stone </td> 
+      <td> Fantasy </td> 
+      <td> 1996 </td> 
+      <td> Bloomsbury </td> 
+      <td> 450 </td> 
+      <td> $13.50 </td> 
+      </tr>
+      <tr>
+      <td> J.K. </td>
+      <td> Rowling </td>
+      <td> Harry Potter and the Chamber of Secrets </td> 
+      <td> Fantasy </td> 
+      <td> 1998 </td> 
+      <td> Bloomsbury </td> 
+      <td> 390 </td> 
+      <td> $12.50 </td> 
+      </tr>
+      <tr>
+      <td> J.K. </td>
+      <td> Rowling </td>
+      <td> Harry Potter and the Prisoner of Azkaban </td> 
+      <td> Fantasy </td> 
+      <td> 2001 </td> 
+      <td> Bloomsbury </td> 
+      <td> 480 </td> 
+      <td> $13 </td> 
+      </tr>
+      <tr>
+      <td> J.K. </td>
+      <td> Rowling </td>
+      <td> Harry Potter and the Goblet of Fire </td> 
+      <td> Fantasy </td> 
+      <td> 2003 </td> 
+      <td> Bloomsbury </td> 
+      <td> 550 </td> 
+      <td> $14 </td> 
+      </tr>
+      <tr>
+      
+    </tbody>
+      <tfoot>
+      <tr> 
+        <td colspan="8"> All data provided by Wikipedia </td>
+      </tr>
+    </tfoot>
 
-          <p> Plan your group event at Four Circles Racing Events. Corporate Groups, Group Outings, and Group Incentives are available at FCRE. Need a team building event? Looking for a race themed group event? Want a driving experience for your group? FCRE can accommodate any group size. Destination Management companies and Corporate Travel Partners are welcome to contact FCRE for a group proposal. </p>
+    </table>
 
-          <p> <q>Best group experience ever! Our clients loved it!</q> - Chase Bank </p>
-          <p> <q>By far the most exciting group event we've ever planned!</q> - Sprout Box </p>
-        </div>
+    <p> The following is a sample form for adding books. </p>
+    <form action="confirmation.html" method = "post">
+      <label for="firstname"> Author First Name </label> 
+      <input type="text" name="firstname" id="firstname"><br>
 
-        <div class = "col-lg-3 col-md-12 col-sm-12 col-xs-12">
-          <img src="images/ds1pic.jpg"  width="350px" class = "img-responsive">
-          </div>
-        <!-- <p> <q>Best group experience ever! Our clients loved it!</q> - Chase Bank </p>
-        <p> <q>By far the most exciting group event we've ever planned!</q> - Sprout Box </p> -->
-        <div class = "col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
-        <h3> Our services </h3> 
-        <ul> 
-          <li> Ride along Experience </li>
-          <li> Driving Experience </li>
-          <li> Advanced Race Experience </li>
-          <li> Full-day and Half-day Events </li>
-        </ul>
-        </div>
+      Author Last Name: <input type="text" name="lastname" id="lastname"><br>
 
-        <div class = "col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <h3> Why FCRE? </h3> 
-          <ol> 
-            <li> We operate in more racetracks so you can host your event close to home </li>
-            <li> Only company that allows solo race experiences </li>
-            <li> You drive the most current and advanced race cars </li>
-            <li> Rated #1 by Speedway magazine </li>
-          </ol> 
-          </div> 
+      <!-- Newsletter? <input type="checkbox"><br> -->
 
+      Title:
+       <input type="text" name="title" id="book_title"> <label for="degree_under"> </label>
+      <br> 
+      Genre: <br>
+      <input type="text" name="title" id="book_title"> <label for="degree_under"> </label>
+      <br>
+      Year Published: 
+      <input type="text" name="title" id="book_title"> <label for="degree_under"> </label>
+      <br>
+      Publisher: 
+      <input type="text" name="title" id="book_title"> <label for="degree_under"> </label>
+      <br>
+      Page Count: 
+      <input type="text" name="title" id="book_title"> <label for="degree_under"> </label>
+      <br>
+      MSRP:
+      <input type="text" name="title" id="book_title"> <label for="degree_under"> </label>
+    <br>
+      <input type = "submit" name="submit" id="submit" value="Add Book" class="button">
+
+
+    </form>
 
         
 
