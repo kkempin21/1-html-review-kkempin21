@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <script src="https://unpkg.com/vue@next"></script>
   </head>
   <body>
     <div class = "container">
@@ -16,19 +16,46 @@
           <h1> Welcome to the first iteration of my Website!  </h1>
         </div>
       </header>
-    
-      <nav class = "row navbar navbar-default">
-        <div class = "navbar-header">
-            <button class = "navbar-toggle" data-toggle="collapse" data-target="#FCREMenu">
-            <span class = "icon-bar"></span>
-            <span class = "icon-bar"></span>
-            <span class = "icon-bar"></span>
-            </button>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="index.html" aria-current="page" href="#">Home/Index |</a>
+              </li>
+              <li class="nav-item">
+                <a class="tables.html" href="#">Tables | </a>
+              </li>
+              <li class="nav-item">
+                <a class="aboutme.html" href="#">| About me</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+      <div id="someApp" class="col col-8">
+      <ul>
+
+        <p> <a v-bind:href = "result.picture.large"> <img v-bind:src = "result.picture.large"/></a></p>
+        <p> Full Name: {{result.name.first+" "+result.name.last}}</a></p>
+        <p> Country of Origin: {{result.location.country}}</a></p>
+        <p> Date of Birth: {{prettyBirthday}}</a></p>
+        <p> Age: {{result.dob.age}}</a></p>
+        <p> <a href="mailto:someone@yoursite.com"> Email: {{result.email}}</a></p>
+        <form v-on:submit.prevent="fetchUserData">
+          <button type="submit">Reload</button>
+        </form>
+      </ul> 
+    </div>
+    
+      <!-- <nav class = "row navbar navbar-default">
       
-      
-      
-      
+       -->
+       
       <!-- <a href ="index.html" class = "cool_navs"> Home | </a> 
       <a href="about_us.html" class = "cool_navs"> About Us | </a> 
       <a href="events.html" class = "cool_navs"> Events | </a> 
@@ -37,12 +64,12 @@
 
 
 
-      <div class = "collapse navbar-collapse" id="FCREMenu">
+      <!-- <div class = "collapse navbar-collapse" id="FCREMenu">
             <ul class= "nav navbar-nav">
             <li><a href="index.html">Home</a> </li>
             <li><a href="aboutme.html">About Me</a></li>
             <li><a href="tables.html"> Tables </a></li> 
-           
+            -->
             <!-- <li class="dropdown">
               <a href="examples.html" class = "dropdown-toggle" data-toggle="dropdown">Examples <span class="caret"></span></a> -->
               
@@ -83,7 +110,10 @@
       
       <footer class = "row"> 
       <hr>
-      Brad Gibson | Phone: 113-452-683 | 567 Numbers Ave, Fort Lauderdale, FL, 33301 </footer>
+      </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script src="js/index.js"></script>
     </body>
 </html>
